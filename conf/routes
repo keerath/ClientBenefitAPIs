@@ -2,4 +2,4 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /api/v1/company/subsidiaries                           controllers.Application.listSubsidiaries(company: String)
+GET     /client-benefit-api/v1/company/subsidiaries                           controllers.Application.listSubsidiaries(company: String)
