@@ -6,8 +6,7 @@ import services.GoogleScrapper
 
 class Application extends Controller {
 
-  def listSubsidiaries(company: String) = Action { request =>
-    val responsePayload = Map("subsidiaries" -> GoogleScrapper.listSubsidiaries(company))
-    Ok(Json.toJson(responsePayload).toString())
+  def listSubsidiaries(company: String) = Action {
+    Ok(Json.toJson(Map("subsidiaries" -> GoogleScrapper.listSubsidiaries(company))))
   }
 }
